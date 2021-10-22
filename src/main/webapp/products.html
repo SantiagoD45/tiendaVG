@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - Tienda Genérica</title>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/flick/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs5/dt-1.11.3/datatables.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/table.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+    <link rel="stylesheet" href="css/file-upload.css">
+
+</head>
+<body id="bootstrap-overrides">
+    <nav class="navigation-bar">
+      <a href="index.html">
+        <div class="navigation-bar__logo">
+          <span class="material-icons">storefront </span>
+          <h5>Tienda Genérica</h5>
+        </div>
+      </a> 
+      <div class="navigation-bar__links">
+        <li><a href="users.html">Usuarios</a></li>
+        <li><a href="customers.html">Clientes</a></li>
+        <li><a href="providers.html">Proveedores</a></li>
+        <li><a href="products.html">Productos</a></li>
+        <li><a href="sales.html">Ventas</a></li>
+        <li><a href="reports.html">Reportes</a></li>
+      </div>
+    </nav>
+
+    <div class="table-and-form">
+        <div>
+        <div class="box">
+            <div class="title">
+            <h2>Productos</h2>
+            <p>Ingresa los datos de Producto</p>
+            </div>
+            <form action="" class="form">
+                <div class="input-labels">
+                    <div class="input-box">
+                        <input type="text" class="input" name="userIdCard" id="input1" placeholder="Código del Producto" required>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" class="input" name="user" id="input2" placeholder="Nombre del Producto">
+                    </div>
+                    <div class="input-box">
+                        <input type="text" class="input" name="userEmail" id="input3" placeholder="NIT del Proveedor">
+                    </div>
+                    <div class="input-box">
+                        <input type="text" class="input" name="userName" id="input4" placeholder="IVA de Compra">
+                    </div>
+                    <div class="input-box item5">
+                        <input type="text" class="input" name="password" id="input5" placeholder="Precio de Compra">
+                    </div>
+                    <div class="input-box item5">
+                        <input type="text" class="input" name="password" id="input6" placeholder="Precio de Venta">
+                    </div>
+                </div>
+                <div class="buttons">
+                    <div class="input-button">
+                        <input type="button" class="button search-button" name="search" id="input7" value="Consultar">
+                    </div>
+                    <div class="input-button">
+                        <input type="button" class="button create-button" name="create" id="input8" value="Crear">
+                    </div>
+                    <div class="input-button">
+                        <input type="button" class="button update-button" name="update" id="input9" value="Actualizar">
+                    </div>
+                    <div class="input-button">
+                        <input type="button" class="button delete-button" name="delete" id="input10" value="Borrar">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="upload-label">
+            <p>Puedes subir un archivo con los productos:</p>
+            <div class="file-upload">
+                <input id="products-file" type="file" accept=".csv">
+                <span class="material-icons-outlined"> file_upload </span>
+                <span id="upload-text"> Seleccionar archivo </span>
+            </div>
+            <button class="btn btn-primary" id="upload-button">
+            <span class="material-icons-outlined">check_circle</span>
+            Cargar
+            </button>
+        </div>
+         </div>
+        <div class="table">
+            <table class="styled-table" id="product_table">
+                <thead class="table-head">
+                    <tr>
+                        <th>Código</th>
+                        <th>Nombre</th>
+                        <th>NIT Proveedor</th>
+                        <th>IVA</th>
+                        <th>Precio Compra</th>
+                        <th>Precio Venta</th>
+                    </tr>
+                </thead>
+                <div class="styled-table__body">
+                    <tbody id="user_table_body">
+                    </tbody>
+                    
+                </div>
+            </table>
+        </div>
+
+   
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/v/bs5/dt-1.11.3/datatables.min.js"></script>
+    <script src="scripts/products-table.js" ></script>
+
+</body>
+</html>

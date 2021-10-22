@@ -1,0 +1,264 @@
+/*tabla de usuarios estilizada*/
+#bootstrap-overrides .styled-table {
+    display: block;
+    border-collapse: collapse;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    position: relative;
+    overflow: overlay;
+    max-height: 62vh;
+    max-width: 100%;
+    width: unset !important;
+}
+
+table.dataTable {
+    margin-top: 1rem;
+}
+
+.styled-table::-webkit-scrollbar {
+    height: 1rem;
+    width: 1rem;
+    overflow: visible;
+}
+
+.styled-table::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, .2);
+    background-clip: padding-box;
+    border: solid transparent;
+    border-width: 1px 1px 1px 6px;
+    min-height: 28px;
+    padding: 100px 0 0;
+    box-shadow: inset 1px 1px 0 rgb(0 0 0 / 10%),
+        inset 0 -1px 0 rgb(0 0 0 / 7%);
+
+    border-style: solid;
+    border-color: transparent;
+    border-width: 0.25rem;
+    background-color: #c0c0c05b;
+    border-radius: 0.5rem;
+    box-shadow: none
+}
+
+::-webkit-scrollbar-corner {
+    background: transparent;
+}
+
+.styled-table::-webkit-scrollbar-button {
+    height: 0.5rem;
+    width: 0px;
+}
+
+.styled-table:hover::-webkit-scrollbar-thumb {
+    background-color: #92919179;
+}
+
+.styled-table thead tr {
+    /*background-color: #CC1D4B;*/
+    background-color:  #25252b;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+
+.styled-table tbody tr {
+    border-bottom: thin solid #dddddd;
+}
+
+table.dataTable thead th,
+table.dataTable thead td {
+    border-bottom: thin solid #dddddd !important;
+}
+
+table.dataTable td.sorting_1 {
+
+    background-color: #c0c0c00c;
+}
+
+.styled-table tbody tr:hover {
+    background-color: #d6d6d6;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:nth-of-type(even):hover {
+    background-color: #d6d6d6;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 0.1rem solid #CC1D4B;
+}
+
+table.dataTable.no-footer {
+    border-bottom: 0.1rem solid #CC1D4B !important;
+}
+
+table.dataTable>thead .sorting:before,
+.sorting:after {
+    bottom: 50%;
+    transform: translateY(50%);
+}
+
+table.dataTable>thead .sorting:after {
+    bottom: 50%;
+    transform: translateY(50%);
+}
+
+.styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}
+
+.styled-table thead {
+    position: sticky;
+    top: 0;
+    z-index: 0;
+}
+
+
+
+#bootstrap-overrides .table {
+    margin: 1rem;
+    font-family: 'Open Sans', Sans-serif;
+    font-size: 1rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    max-width: 100%;
+
+}
+
+.table-and-form {
+    min-height: 88vh;
+    min-width: 80vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem;
+}
+
+.page-item.active .page-link{
+    background-color: #CC1D4B;
+    border: 1px solid #CC1D4B;
+}
+.page-link {
+    color: #CC1D4B;
+}
+.page-link:hover {
+color: black;
+}
+.page-link:focus,
+.form-select:focus,
+.form-control:focus {
+    border-color: #6b6b6b;
+    box-shadow: none;
+}
+/* Estilos para el formulario */
+.box {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border: 0.15rem solid rgb(196, 196, 196);
+    border-radius: 8px;
+
+}
+
+.box h2 {
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    text-align: center;
+    font-size: x-large;
+    font-weight: 600;
+}
+
+.box p {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    font-size: medium;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+}
+
+.box .form {
+    display: flex;
+    flex-direction: column;
+}
+
+.box .form .buttons {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    
+
+}
+
+.box .form .input-labels {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box .form .input-box {
+    display: flex;
+    max-width: fit-content;
+    justify-content: center;
+    padding-bottom: 0.8rem;
+    width: 100%;
+}
+
+.box .form .input-box input {
+    width: 90%;
+    padding: 0.5rem;
+    outline: none;
+    border: 0.1rem solid gainsboro;
+    border-radius: 5px;
+    font-size: medium;
+    
+}
+
+.box .form .input-box input:focus {
+    border-color: gray;
+}
+
+.box .form .input-button {
+    margin: 0 1rem;
+}
+
+.box .form .input-button input {
+    margin-bottom: 0.5rem;
+    border: none;
+    outline: none;
+    border-radius: 0.3rem;
+    padding: 0.6rem 2rem;
+    /*background-color: rgb(212, 25, 63);*/
+    background-color:  #25252b;
+    color: white;
+    font-size: medium;
+    cursor: pointer;
+}
+
+.box .form .input-button input:hover {
+    background-color: rgb(233, 24, 66);
+    box-shadow: 2px rgb(70, 27, 36);
+
+}
+
+.box .form .input-button input:active {
+    background-color: rgb(37, 37, 43);
+}
